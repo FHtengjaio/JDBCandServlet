@@ -26,7 +26,10 @@ public class JDBCUtil {
             }
             resultSet = null;
         }
+        release(statement, connection);
+    }
 
+    public static void release(Statement statement, Connection connection) {
         if (statement != null) {
             try {
                 statement.close();

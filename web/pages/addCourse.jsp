@@ -27,7 +27,7 @@
                 <td><label>课程描述</label></td>
                 <td><input type="text" name="desc" placeholder="请输入描述"></td>
             </tr>
-            <tr><td colspan="2" align="center"><input type="button" value="添加"></td></tr>
+            <tr><td colspan="2" align="center"><input type="submit" value="添加"></td></tr>
         </table>
     </form>
 </div>

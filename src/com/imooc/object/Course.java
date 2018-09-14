@@ -3,26 +3,16 @@ package com.imooc.object;
 import java.util.Date;
 
 public class Course {
-    private int id;
     private String name;
     private String category;
     private String desc;
     private Date createTime;
 
-    public Course(int id, String name, String category, String desc, Date createTime) {
-        this.id = id;
+    public Course(String name, String category, String desc, Date createTime) {
         this.name = name;
         this.category = category;
         this.desc = desc;
         this.createTime = createTime;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -60,8 +50,7 @@ public class Course {
     @Override
     public String toString() {
         return "Course{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", category='" + category + '\'' +
                 ", desc='" + desc + '\'' +
                 ", createTime=" + createTime +
